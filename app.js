@@ -37,4 +37,8 @@ app.get('/absolute/:a', (req, res) =>
   res.send((Math.abs(parseInt(req.params.a))).toString())
 )
 
+app.get('/square/:a', (req, res) =>
+  res.send((Math.pow(parseInt(req.params.a), 2)).toString())
+)
+
 app.listen(3000)
