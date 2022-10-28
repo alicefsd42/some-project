@@ -41,4 +41,8 @@ app.get('/sqrt/:a', (req, res) =>
   res.send((Math.sqrt(parseInt(req.params.a))).toString())
 )
 
+app.get('/square/:a', (req, res) =>
+  res.send((Math.pow(parseInt(req.params.a), 2)).toString())
+)
+
 app.listen(3000)
