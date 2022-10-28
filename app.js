@@ -30,4 +30,8 @@ app.get('/power/:a/:b', (req, res) =>
     ))
 )
 
+app.get('/absolute/:a', (req, res) =>
+  res.send((Math.abs(parseInt(req.params.a))).toString())
+)
+
 app.listen(3000)
