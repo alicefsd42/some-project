@@ -16,4 +16,8 @@ app.get('/multiply/:a/:b', (req, res) =>
   res.send((parseInt(req.params.a) * parseInt(req.params.b)).toString())
 )
 
-app.listen(4000)
+app.get('/divide/:a/:b', (req, res) =>
+  res.send((parseInt(req.params.a) / parseInt(req.params.b)).toString())
+)
+
+app.listen(3000)
