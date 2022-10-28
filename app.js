@@ -49,4 +49,8 @@ app.get('/cos/:a', (req, res) =>
   res.send((Math.cos(parseInt(req.params.a))).toString())
 )
 
+app.get('/sin/:a', (req, res) =>
+  res.send((Math.sin(parseInt(req.params.a))).toString())
+)
+
 app.listen(3000)
