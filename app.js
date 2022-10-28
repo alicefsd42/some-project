@@ -29,7 +29,10 @@ app.get('/power/:a/:b', (req, res) =>
       ).toString()
     ))
 )
-
+/**
+ * Computes the absolute value of a parameter
+ * @param {number} a Number to calculate its absolute value
+ */
 app.get('/absolute/:a', (req, res) =>
   res.send((Math.abs(parseInt(req.params.a))).toString())
 )
